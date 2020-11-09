@@ -15,11 +15,32 @@ namespace PersonalSiteMVC.UI.MVC.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            return View();
+        }
 
+        [HttpGet]
+        public ActionResult Resume()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Projects()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult CurtainCall_Details()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Links()
+        {
             return View();
         }
 

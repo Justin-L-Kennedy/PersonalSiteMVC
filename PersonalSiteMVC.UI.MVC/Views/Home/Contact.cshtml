@@ -1,62 +1,94 @@
 ﻿@model PersonalSiteMVC.UI.MVC.Models.ContactViewModel
 
 @{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact | Justin L Kennedy";
 }
 
-<h2>@ViewBag.Title</h2>
-@if (ViewBag.ErrorMessage != null)
-{
-    <h3 class="text-danger">@Html.Raw(ViewBag.ErrorMessage)</h3>
-}
+<main id="main">
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
 
-    <div class="form-horizontal">
-        <h4>Get in touch with me!</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Need to get in touch with me? I'd love to hear from you!</p>
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
-        </div>
+            <div class="row mt-5">
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
-            </div>
-        </div>
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <a href="https://www.google.com/maps/place/Kansas+City+Metropolitan+Area/@("@")39.0512504,-94.8531702,10z/data=!4m5!3m4!1s0x87c0e5f7a6c7ad99:0x2d3967c6e6fea83a!8m2!3d38.97887!4d-94.645035" target="_blank"> <i class="icofont-google-map"></i> </a>
+                            <h4>Location:</h4>
+                            <p> <a href="https://www.google.com/maps/place/Kansas+City+Metropolitan+Area/@("@")39.0512504,-94.8531702,10z/data=!4m5!3m4!1s0x87c0e5f7a6c7ad99:0x2d3967c6e6fea83a!8m2!3d38.97887!4d-94.645035" target="_blank">Kansas City Metropolitan</a></p>
+                        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
-            </div>
-        </div>
+                        <div class="email">
+                            <a href="mailto:Justin.L.Kennedy@outlook.com"> <i class="icofont-envelope"></i> </a>
+                            <h4>Email:</h4>
+                            <p> <a href="mailto:Justin.L.Kennedy@outlook.com">Justin.L.Kennedy@outlook.com</a> </p>
+                        </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Send Message" class="btn btn-default" />
+                        <div class="phone">
+                            <a href="+01-913-638-9056"> <i class="icofont-phone"></i> </a>
+                            <h4>Call:</h4>
+                            <p> <a href="+01-913-638-9056">913-638-9056</a> </p>
+                        </div>
+
+                        <div class="social-links">
+                            @*<a href="#" class="twitter"><i class="icofont-twitter"></i></a>*@
+                            <a href="https://www.facebook.com/Justin.Lloyd.Kennedy" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
+                            @*<a href="#" class="instagram"><i class="icofont-instagram"></i></a>*@
+                            <a href="https://github.com/Justin-L-Kennedy" target="_blank" class="github"><i class="icofont-github"></i></a>
+                            <a href="https://www.linkedin.com/in/JustinLKennedy" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    @if (ViewBag.ErrorMessage != null)
+                    {
+                        <h3 class="text-danger">@Html.Raw(ViewBag.ErrorMessage)</h3>
+                    }
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <form>
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-row">
+                                <div class="col-md-6 form-group">
+                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name" } })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "validate" })
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "validate" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", @placeholder = "Subject" } })
+                                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "validate" })
+                            </div>
+                            <div class="form-group">
+                                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @placeholder = "Message", rows = 5 } })
+                                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "validate" })
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    }
+                </div>
+
             </div>
+
         </div>
-    </div>
-}
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
