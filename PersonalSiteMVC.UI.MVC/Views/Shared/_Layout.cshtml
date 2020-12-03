@@ -8,7 +8,7 @@
     <meta name="description" content="Justin L Kennedy is a full stack web developer utilizing Visual Studio to code HTML, CSS, JavaScript, and C#, and SQL for database management." />
     <meta name="keywords" content="Justin L Kennedy, front end, back end, full stack, developer, Visual Studio, HTML, CSS, JavaScript, JS, C#, SQL" />
     <meta name="author" content="Justin L Kennedy" />
-    <title>@ViewBag.Title</title>
+    <title>@ViewBag.Title | Justin L Kennedy</title>
 
     <!-- Favicons -->
     <link href="~/Content/assets/img/favicon.png" rel="icon">
@@ -20,16 +20,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
+    @*<!-- Vendor CSS Files -->
     <link href="~/Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="~/Content/assets/vendor/aos/aos.css" rel="stylesheet">
-
     <!-- Template Main CSS File -->
-    <link href="~/Content/assets/css/style.css" rel="stylesheet">
+    <link href="~/Content/assets/css/style.css" rel="stylesheet">*@
+
+    @Styles.Render("~/Content/css")
 </head>
 
 <body>
@@ -98,7 +99,7 @@
     <div id="preloader"></div>
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
 
-    <!-- Vendor JS Files -->
+    @*<!-- Vendor JS Files -->
     <script src="~/Content/assets/vendor/jquery/jquery.min.js"></script>
     <script src="~/Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -109,9 +110,10 @@
     <script src="~/Content/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="~/Content/assets/vendor/venobox/venobox.min.js"></script>
     <script src="~/Content/assets/vendor/aos/aos.js"></script>
-
     <!-- Template Main JS File -->
-    <script src="~/Content/assets/js/main.js"></script>
+    <script src="~/Content/assets/js/main.js"></script>*@
+
+    @Scripts.Render("~/bundles/template")
 
     @RenderSection("scripts", false)
 

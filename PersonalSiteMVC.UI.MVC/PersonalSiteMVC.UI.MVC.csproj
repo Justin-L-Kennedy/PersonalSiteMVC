@@ -189,6 +189,14 @@
     <Content Include="Content\assets\img\android-chrome-192x192.png" />
     <Content Include="Content\assets\img\android-chrome-512x512.png" />
     <Content Include="Content\assets\img\apple-touch-icon.png" />
+    <Content Include="Content\assets\img\classmates\CadeHocraffer.jpg" />
+    <Content Include="Content\assets\img\classmates\ChadWay.jpg" />
+    <Content Include="Content\assets\img\classmates\DeborahReed.jpg" />
+    <Content Include="Content\assets\img\classmates\ElizabethNeedham.jpg" />
+    <Content Include="Content\assets\img\classmates\LoganRothrock.jpg" />
+    <Content Include="Content\assets\img\classmates\NicholasZuniga.jpg" />
+    <Content Include="Content\assets\img\classmates\TylerFierro.jpg" />
+    <Content Include="Content\assets\img\classmates\ZacharyMallicoat.jpg" />
     <Content Include="Content\assets\img\favicon-16x16.png" />
     <Content Include="Content\assets\img\favicon.png" />
     <Content Include="Content\assets\img\hero-bg.jpg" />
@@ -204,6 +212,10 @@
     <Content Include="Content\assets\img\portfolio\CurtainCall_Sept16.jpg" />
     <Content Include="Content\assets\img\portfolio\FilmStripClipart.png" />
     <Content Include="Content\assets\img\portfolio\FringeFestival.jpg" />
+    <Content Include="Content\assets\img\portfolio\JustAct.jpg" />
+    <Content Include="Content\assets\img\portfolio\LetsEat.jpg" />
+    <Content Include="Content\assets\img\portfolio\NewHomeRealEstate.jpg" />
+    <Content Include="Content\assets\img\portfolio\NiceUniversity.jpg" />
     <Content Include="Content\assets\img\portfolio\TuacaPromo.jpg" />
     <Content Include="Content\assets\img\testimonials\testimonials-1.jpg" />
     <Content Include="Content\assets\img\testimonials\testimonials-2.jpg" />
@@ -254,7 +266,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -404,6 +418,7 @@
     <Content Include="Content\assets\vendor\jquery\jquery.min.map" />
     <Content Include="Content\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="Content\assets\vendor\owl.carousel\README.md" />
+    <Content Include="Content\assets\img\JustinLKennedyResume.pdf" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />

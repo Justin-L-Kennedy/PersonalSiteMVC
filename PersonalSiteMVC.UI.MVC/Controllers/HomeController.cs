@@ -62,7 +62,7 @@ namespace PersonalSiteMVC.UI.MVC.Controllers
             MailMessage msg = new MailMessage(
                 "no-reply@justinlkennedy.com",
                 "justin.l.kennedy@outlook.com",
-                "Email from StoreFront.JustinLKennedy.com",
+                "Email from JustinLKennedy.com",
                 emailBody);
             msg.IsBodyHtml = true;
             msg.Priority = MailPriority.High;

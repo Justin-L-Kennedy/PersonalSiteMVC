@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Projects | Justin L Kennedy";
+    ViewBag.Title = "Projects";
 }
 
 <main id="main">
@@ -9,8 +9,8 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Projects</h2>
-                <p>A sample of projects I have created.</p>
+                <h2>@ViewBag.Title</h2>
+                <p>Check out my projects by clicking on the <i class="bx bx-link"></i></p>
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -27,22 +27,95 @@
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="~/Content/assets/img/portfolio/FilmStripClipart.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Reel House | WORK IN PROGRESS</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="~/Content/assets/img/portfolio/FilmStripClipart.png" data-gall="portfolioGallery" class="venobox" title="Reel House | WORK IN PROGRESS"><i class="bx bx-plus"></i></a>
-                        <a href="http://reelhouse.justinlkennedy.com" title="Reel House | WORK IN PROGRESS"><i class="bx bx-link"></i></a>
-                      </div>
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/JustAct.jpg" class="img-fluid" alt="Just Act! Talent Management">
+                        <div class="portfolio-info">
+                            <h4>Just Act! Talent Management</h4>
+                            <hr />
+                            <h6>
+                                The Learning Management System I created is a secure data-driven ASP.NET MVC application. Actors can register for the continuous training courses and then complete the lessons in each course by viewing a video and/or a PDF document. They are also able to track their own personal progress by lessons viewed and courses completed.
+                            </h6>
+                            <hr />
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="~/Content/assets/img/portfolio/JustAct.jpg" data-gall="portfolioGallery" class="venobox" title="Just Act! Talent Management"><i class="bx bx-plus"></i></a>
+                                <a href="http://fsdp.justinlkennedy.com" title="Just Act! Talent Management"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/FilmStripClipart.png" class="img-fluid" alt="Justin's Reel House">
+                        <div class="portfolio-info">
+                            <h4>Justin's Reel House | WORK IN PROGRESS</h4>
+                            <hr />
+                            <h6>Utilizing MVC and Entity Framework, I created an e-commerce storefront for my movie collection. It includes a session-based shopping cart, search filtering and sorting, and Administrators have full CRUD functionality.</h6>
+                            <hr />
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="~/Content/assets/img/portfolio/FilmStripClipart.png" data-gall="portfolioGallery" class="venobox" title="Justin's Reel House | WORK IN PROGRESS"><i class="bx bx-plus"></i></a>
+                                <a href="http://reelhouse.justinlkennedy.com" title="Justin's Reel House | WORK IN PROGRESS"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/NewHomeRealEstate.jpg" class="img-fluid" alt="New Home Real Estate">
+                        <div class="portfolio-info">
+                            <h4>New Home Real Estate</h4>
+                            <hr />
+                            <h6>I participated in a charitable hackathon, and collaborated remotely with a team of 4 developers to build an ASP.NET MVC application utilizing the project brief and direct communication with the client. We applied the Agile software development methodology and tracked project progress on a Kanban board.</h6>
+                            <hr />
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="~/Content/assets/img/portfolio/NewHomeRealEstate.jpg" data-gall="portfolioGallery" class="venobox" title="New Home Real Estate"><i class="bx bx-plus"></i></a>
+                                <a href="#" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="New Home Real Estate"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/NiceUniversity.jpg" class="img-fluid" alt="Scheduling Administration Tool">
+                        <div class="portfolio-info">
+                            <h4>Scheduling Administration Tool</h4>
+                            <hr />
+                            <h6>Using pair programming, we created a secure application to simulate an online class scheduling system. Administrators have the ability to manage students, courses, scheduled classes, and enrollments.<br /><br />To view secure functionality, log in with:<br />Email: scheduling@example.com<br />Password: Schedule@1</h6>
+                            <hr />
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="~/Content/assets/img/portfolio/NiceUniversity.jpg" data-gall="portfolioGallery" class="venobox" title="Scheduling Administration Tool"><i class="bx bx-plus"></i></a>
+                                <a href="http://sat.justinlkennedy.com" title="Scheduling Administration Tool"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/LetsEat.jpg" class="img-fluid" alt="Let's Eat!">
+                        <div class="portfolio-info">
+                            <h4>Let's Eat!</h4>
+                            <hr />
+                            <h6>Learning the basic fundamentals of HTML and CSS, I created a static website utilizing a client brief.<br /><br />The brief is included in my FED1StudioProject repo on GitHub.</h6>
+                            <hr />
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="~/Content/assets/img/portfolio/LetsEat.jpg" data-gall="portfolioGallery" class="venobox" title="Let's Eat!"><i class="bx bx-plus"></i></a>
+                                <a href="http://lets-eat.justinlkennedy.com" title="Let's Eat!"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img src="~/Content/assets/img/portfolio/CurtainCall2.jpg" class="img-fluid" alt="">
+                        <img src="~/Content/assets/img/portfolio/CurtainCall2.jpg" class="img-fluid" alt="Curtain Call with Chris Holbrook Show Poster">
                         <div class="portfolio-info">
                             <h4>Show Poster</h4>
                             <p>Curtain Call with Chris Holbrook</p>
@@ -50,32 +123,18 @@
                                 <a href="~/Content/assets/img/portfolio/CurtainCall2.jpg" data-gall="portfolioGallery" class="venobox" title="Show Poster"><i class="bx bx-plus"></i></a>
                                 @*<a href="~/Views/Home/CurtainCall_Details.cshtml" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Show Posters | Curtain Call with Chris Holbrook"><i class="bx bx-link"></i></a>*@
                                 @*<div id='curtainCallModal' class='modal fade in' data-url='@Url.Action("CurtainCall_Details")'>
-                                    <div id='curtainCallContainer'>
-                                    </div>
-                                </div>
-                                <a id='showCurtainCall'><i class="bx bx-link"></i></a>*@
+                            <div id='curtainCallContainer'>
+                            </div>
+                        </div>
+                        <a id='showCurtainCall'><i class="bx bx-link"></i></a>*@
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="~/Content/assets/img/portfolio/FilmStripClipart.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Let's Eat!</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="~/Content/assets/img/portfolio/Trumpet.jpg" data-gall="portfolioGallery" class="venobox" title="Let's Eat!"><i class="bx bx-plus"></i></a>
-                        <a href="http://lets-eat.justinlkennedy.com" title="Let's Eat!"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                     <div class="portfolio-wrap">
-                        <img src="~/Content/assets/img/portfolio/FringeFestival.jpg" class="img-fluid" alt="">
+                        <img src="~/Content/assets/img/portfolio/FringeFestival.jpg" class="img-fluid" alt="Fringe Festival Advertisement">
                         <div class="portfolio-info">
                             <h4>Fringe Festival Advertisement</h4>
                             <p>Bar Natasha</p>
@@ -89,7 +148,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img src="~/Content/assets/img/portfolio/BRTKC_InConcert2.jpg" class="img-fluid" alt="">
+                        <img src="~/Content/assets/img/portfolio/BRTKC_InConcert2.jpg" class="img-fluid" alt="Dreamgirls: In Concert">
                         <div class="portfolio-info">
                             <h4>Dreamgirls: In Concert</h4>
                             <p>Black Repertory Theatre of Kansas City</p>
@@ -101,23 +160,9 @@
                     </div>
                 </div>
 
-                <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="~/Content/assets/img/portfolio/EnchantedRose.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Enchanted Rose</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="~/Content/assets/img/portfolio/EnchantedRose.jpg" data-gall="portfolioGallery" class="venobox" title="Enchanted Rose"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>-->
-
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                     <div class="portfolio-wrap">
-                        <img src="~/Content/assets/img/portfolio/TuacaPromo.jpg" class="img-fluid" alt="">
+                        <img src="~/Content/assets/img/portfolio/TuacaPromo.jpg" class="img-fluid" alt="Tuaca Promo">
                         <div class="portfolio-info">
                             <h4>Tuaca Promo</h4>
                             <p>Bar Natasha</p>
@@ -128,33 +173,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img src="~/Content/assets/img/portfolio/BRTKC_OpenCallBlack.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Dreamgirls: In Concert Open Call</h4>
-                      <p>Black Repertory Theatre of Kansas City</p>
-                      <div class="portfolio-links">
-                        <a href="~/Content/assets/img/portfolio/BRTKC_OpenCallBlack.jpg" data-gall="portfolioGallery" class="venobox" title="Dreamgirls: In Concert Open Call"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>-->
-                <!--<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="~/Content/assets/img/portfolio/CurtainCall_July16.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Show Poster</h4>
-                      <p>Curtain Call with Chris Holbrook</p>
-                      <div class="portfolio-links">
-                        <a href="~/Content/assets/img/portfolio/CurtainCall_July16.jpg" data-gall="portfolioGallery" class="venobox" title="Show Poster"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>-->
 
             </div>
 
@@ -177,4 +195,4 @@
             });
         });
     </script>
-    }
+}
